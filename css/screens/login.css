@@ -1,0 +1,63 @@
+.welcome-header {
+  margin: 60px 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.welcome-header__image {
+  width: 50%;
+}
+.welcome-header__title {
+  margin: 10px 0 20px 0;
+  font-size: 40px;
+  font-weight: bold;
+  color: var(--christmas-dark-green);
+}
+.welcome-header__text {
+  width: 60%;
+  opacity: 0.7;
+  font-size: 20px;
+  color: var(--christmas-green);
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  margin: 0 30px;
+}
+.login-form__input {
+  border: none;
+  background-color: var(--christmas-light-red);
+  padding: 15px 0;
+  font-size: 18px;
+  border-bottom: 1px solid var(--christmas-light-green);
+  margin-bottom: 25px;
+  transition: border-color 0.5 ease-in-out;
+}
+.login-form__input::placeholder {
+  color: var(--christmas-light-green);
+  font-family: "Mountains of Christmas", cursive;
+}
+.login-form__input:focus,
+.login-form__btn:hover {
+  color: var(--christmas-dark-green);
+  border-color: var(--christmas-dark-green);
+}
+.login-form__input:focus::placeholder,
+.login-form__input:valid {
+  color: var(--christmas-dark-green);
+  font-family: "Mountains of Christmas", cursive;
+}
+
+.login-form__btn {
+  cursor: pointer;
+  color: var(--christmas-light-green);
+  font-family: "Mountains of Christmas", cursive;
+}
+
+.login-form__a {
+  text-align: center;
+  font-size: 13px;
+  color: var(--christmas-dark-green);
+}

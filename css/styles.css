@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&display=swap");
+
+@import "reset.css";
+@import "variables.css";
+
+/* Components */
+@import "components/status-bar.css";
+@import "components/nav-bar.css";
+@import "components/screen-header.css";
+@import "components/user-components.css";
+@import "components/badge.css";
+@import "components/icon-row.css";
+
+/* Screens */
+@import "screens/login.css";
+@import "screens/children.css";
+@import "screens/find.css";
+@import "screens/more.css";
+
+body {
+  height: 150vh;
+  font-family: "Mountains of Christmas", cursive;
+  background-color: var(--christmas-light-red);
+}
+
+.main-screen {
+  padding: 0 var(--horizontal-space);
+}

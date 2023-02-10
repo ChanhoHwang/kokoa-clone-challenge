@@ -1,0 +1,9 @@
+:root {
+  --christmas-light-red: #f5624d;
+  --christmas-red: #cc231e;
+  --christmas-light-green: #34a65f;
+  --christmas-green: #0f8a5f;
+  --christmas-dark-green: #235e6f;
+  --horizontal-space: 25px;
+  --main-border: 1px solid var(--christmas-red);
+}

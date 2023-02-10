@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/styles.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text Santa Claus</title>
+  </head>
+  <body>
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>No Service</span>
+        <i class="fas fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>13:43</span>
+      </div>
+      <div class="status-bar__column">
+        <span>110%</span>
+        <i class="fas fa-battery-full"></i>
+        <i class="fas fa-snowflake"></i>
+      </div>
+    </div>
+
+    <header class="welcome-header">
+      <img class="welcome-header__image" src="images/santa-silhouette.svg" />
+      <h1 class="welcome-header__title">TEXT SANTA CLAUS</h1>
+      <p class="welcome-header__text">Santa tell me if you're really there</p>
+    </header>
+
+    <form class="login-form" action="children.html" method="get">
+      <input
+        class="login-form__input"
+        name="childname"
+        type="text"
+        required
+        placeholder="Child name"
+      />
+      <input
+        class="login-form__input"
+        name="password"
+        type="password"
+        required
+        placeholder="Password"
+      />
+      <input
+        class="login-form__input login-form__btn"
+        type="submit"
+        value="Log In"
+      />
+      <a class="login-form__a" href="#">Find Santa Claus</a>
+    </form>
+
+    <script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
