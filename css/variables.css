@@ -1,9 +1,13 @@
 :root {
-  --christmas-light-red: #f5624d;
-  --christmas-red: #cc231e;
-  --christmas-light-green: #34a65f;
-  --christmas-green: #0f8a5f;
-  --christmas-dark-green: #235e6f;
+  --christmas-light-purple: #343163;
+  --christmas-purple: #292258;
+  --christmas-light-green: #50769f;
+  --christmas-green: #304564;
+  --christmas-yellow: #f0dc97;
+  --christmas-pink: #df70ab;
+  --christmas-red: #aa3269;
+  --christmas-light-blue: #8c92f4;
+  --christmas-blue: #6866f3;
   --horizontal-space: 25px;
-  --main-border: 1px solid var(--christmas-red);
+  --main-border: 1px solid white;
 }

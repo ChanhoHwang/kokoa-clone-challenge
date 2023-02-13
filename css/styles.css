@@ -10,17 +10,23 @@
 @import "components/user-components.css";
 @import "components/badge.css";
 @import "components/icon-row.css";
+@import "components/alt-screen-header.css";
+@import "components/no-mobile.css";
 
 /* Screens */
 @import "screens/login.css";
 @import "screens/children.css";
 @import "screens/find.css";
 @import "screens/more.css";
+@import "screens/settings.css";
+@import "screens/chat.css";
+@import "screens/gift.css";
 
 body {
   height: 150vh;
   font-family: "Mountains of Christmas", cursive;
-  background-color: var(--christmas-light-red);
+  background-color: var(--christmas-purple);
+  color: white;
 }
 
 .main-screen {

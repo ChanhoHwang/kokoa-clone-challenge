@@ -1,20 +1,54 @@
 #children-display-link {
   text-align: center;
   display: block;
-  background-color: var(--christmas-light-green);
+  background-color: #343163;
   padding: 15px 0;
   margin-top: 15px;
+  margin-bottom: 25px;
   font-size: 15px;
-  color: var(--christmas-dark-green);
 }
 .children-screen__channel {
   margin-top: 25px;
-  border-top: 1px solid var(--christmas-red);
+  border-top: var(--main-border);
   padding: 15px;
 }
 .children-screen__channel-header {
   margin-bottom: 30px;
   display: flex;
   justify-content: space-between;
-  color: var(--christmas-dark-green);
+}
+
+@keyframes hideSplashScreen {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+#splash-screen {
+  background-color: var(--christmas-light-green);
+  position: absolute;
+  height: 150vh;
+  width: 100vw;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 130px;
+  z-index: 100;
+  animation: hideSplashScreen 0.3s ease-in-out forwards;
+  animation-delay: 1s;
+}
+@keyframes upSnow {
+  from {
+    transform: translate(0, -300px);
+  }
+  to {
+    transform: translate(0, 0);
+  }
+}
+#splash-screen i {
+  animation: upSnow 0.5s linear forwards;
 }

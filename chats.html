@@ -10,7 +10,7 @@
     <div class="status-bar">
       <div class="status-bar__column">
         <span>No Service</span>
-        <i class="fas fa-wifi"></i>
+        <i class="fas fa-wifi fa-sm"></i>
       </div>
       <div class="status-bar__column">
         <span>13:43</span>
@@ -18,7 +18,7 @@
       <div class="status-bar__column">
         <span>110%</span>
         <i class="fas fa-battery-full"></i>
-        <i class="fas fa-snowflake"></i>
+        <i class="fas fa-bolt fa-sm"></i>
       </div>
     </div>
 
@@ -33,56 +33,64 @@
     </header>
 
     <main class="main-screen">
-      <div class="user-component">
-        <div class="user-component__column">
-          <img
-            src="http://www.clipartbest.com/cliparts/9cR/LBz/9cRLBzMzi.png"
-            class="user-component__avatar user-component__avatar"
-          />
-          <div class="user-component__text">
-            <h4 class="user-component__title">Henry</h4>
-            <h6 class="user-component__subtitle">Is Santa Claus real?</h6>
+      <a href="chat-1.html">
+        <div class="user-component">
+          <div class="user-component__column">
+            <img
+              src="https://static.wikia.nocookie.net/disney/images/d/dd/Profile_-_Lewis_Robinson.jpeg/revision/latest?cb=20190624041928"
+              class="user-component__avatar user-component__avatar"
+            />
+            <div class="user-component__text">
+              <h4 class="user-component__title">Henry</h4>
+              <h6 class="user-component__subtitle">Is Santa Claus real?</h6>
+            </div>
+          </div>
+          <div class="user-component__column">
+            <span class="user-component__time">13:25</span>
+            <div class="badge">1</div>
           </div>
         </div>
-        <div class="user-component__column">
-          <span class="user-component__time">13:25</span>
-          <div class="badge">1</div>
-        </div>
-      </div>
-      <div class="user-component">
-        <div class="user-component__column">
-          <img
-            src="http://www.clipartbest.com/cliparts/Kcn/XqM/KcnXqMyni.png"
-            class="user-component__avatar user-component__avatar"
-          />
-          <div class="user-component__text">
-            <h4 class="user-component__title">Liam</h4>
-            <h6 class="user-component__subtitle">I just want a puppy doll.</h6>
+      </a>
+      <a href="chat-2.html">
+        <div class="user-component">
+          <div class="user-component__column">
+            <img
+              src="https://static.wikia.nocookie.net/disney/images/6/64/Adorable_Norm.png/revision/latest?cb=20171211160452"
+              class="user-component__avatar user-component__avatar"
+            />
+            <div class="user-component__text">
+              <h4 class="user-component__title">Liam</h4>
+              <h6 class="user-component__subtitle">
+                I just want a puppy doll.
+              </h6>
+            </div>
+          </div>
+          <div class="user-component__column">
+            <span class="user-component__time">15:54</span>
+            <div class="badge">2</div>
           </div>
         </div>
-        <div class="user-component__column">
-          <span class="user-component__time">15:54</span>
-          <div class="badge">2</div>
-        </div>
-      </div>
-      <div class="user-component">
-        <div class="user-component__column">
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Girl_silhouette_black.svg"
-            class="user-component__avatar user-component__avatar"
-          />
-          <div class="user-component__text">
-            <h4 class="user-component__title">Emma</h4>
-            <h6 class="user-component__subtitle">
-              My brother ate all the cookies, but I didn't cry.
-            </h6>
+      </a>
+      <a href="chat-3.html">
+        <div class="user-component">
+          <div class="user-component__column">
+            <img
+              src="https://static.wikia.nocookie.net/disney/images/2/25/Profile_-_Vanellope_Von_schweetz.jpeg/revision/latest?cb=20190312023329"
+              class="user-component__avatar user-component__avatar"
+            />
+            <div class="user-component__text">
+              <h4 class="user-component__title">Emma</h4>
+              <h6 class="user-component__subtitle">
+                My brother ate all the cookies, but I didn't cry.
+              </h6>
+            </div>
+          </div>
+          <div class="user-component__column">
+            <span class="user-component__time">17:47</span>
+            <div class="badge">1</div>
           </div>
         </div>
-        <div class="user-component__column">
-          <span class="user-component__time">17:47</span>
-          <div class="badge">1</div>
-        </div>
-      </div>
+      </a>
     </main>
 
     <nav class="nav">
@@ -95,7 +103,7 @@
         <li class="nav__btn">
           <a class="nav__link" href="chats.html">
             <span class="nav__notification badge">4</span>
-            <i class="fas fa-comment fa-2x icon-dark_green"></i>
+            <i class="fas fa-comment fa-2x nav__icon-open"></i>
           </a>
         </li>
         <li class="nav__btn">
@@ -111,6 +119,10 @@
         </li>
       </ul>
     </nav>
+
+    <div id="no-mobile">
+      <span>Your screen is too big ㅠㅠ</span>
+    </div>
 
     <script
       src="https://kit.fontawesome.com/6478f529f2.js"

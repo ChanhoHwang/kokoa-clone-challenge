@@ -1,0 +1,267 @@
+.christmas {
+  margin-top: 40px;
+  border-top: var(--main-border);
+  padding-top: 30px;
+}
+.christmas--title {
+  color: var(--christmas-dark-green);
+}
+.christmas__mood {
+  width: 100%;
+  padding-top: 100px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.z-index--1 {
+  z-index: 1;
+}
+.z-index--2 {
+  z-index: 2;
+}
+.z-index--3 {
+  z-index: 3;
+}
+
+.christmas__tree {
+  font-size: 400px;
+  color: var(--christmas-dark-green);
+  text-shadow: 0 0 50px var(--christmas-green);
+  filter: blur(1px);
+}
+.christmas__star {
+  font-size: 50px;
+  color: white;
+  text-shadow: 0 0 5px #ffffff, 0 0 10px #fffee0, 0 0 20px #fffec8,
+    0 0 40px #fffdaf, 0 0 60px#fffd8d, 0 0 100px #fdfa72;
+}
+.christmas__socks {
+  font-size: 30px;
+  color: #ff3d41;
+  text-shadow: 0 0 5px #ff3d41, 0 0 10px #ff0000, 0 0 20px #dc0005,
+    0 0 40px #dc0005, 0 0 60px#c80004;
+  filter: blur(0.5px);
+  transform: rotate(20deg);
+}
+.christmas__star-2 {
+  font-size: 25px;
+  color: #d2eff7;
+  text-shadow: 0 0 5px #d2eff7, 0 0 10px #a5e0f0, 0 0 20px #79d0e8,
+    0 0 40px #4cc1e1, 0 0 60px#1ca0c4;
+  filter: blur(0.5px);
+  transform: rotate(25deg);
+}
+.christmas__snow {
+  font-size: 25px;
+  color: #d4efff;
+  text-shadow: 0 0 5px #d4efff, 0 0 10px #cdebff, 0 0 20px #c6e8ff,
+    0 0 40px #bee5ff, 0 0 60px#b8e3ff;
+  filter: blur(0.5px);
+  transform: rotate(25deg);
+}
+.christmas__berry {
+  font-size: 30px;
+  color: #f3dcab;
+  text-shadow: 0 0 5px #f3dcab, 0 0 10px #e9d87e, 0 0 20px #e9d87e,
+    0 0 40px #f2d67e, 0 0 60px#e9c46d;
+  filter: blur(0.5px);
+  transform: rotate(-15deg);
+}
+.christmas__snowman {
+  font-size: 30px;
+  color: #c6e8ff;
+  text-shadow: 0 0 5px #c6e8ff, 0 0 10px #bee5ff, 0 0 20px #bee5ff,
+    0 0 40px #b8e3ff, 0 0 60px#b8e3ff;
+  filter: blur(0.5px);
+  transform: rotate(30deg);
+}
+.christmas__star-3 {
+  font-size: 20px;
+  color: #f3dcab;
+  text-shadow: 0 0 5px #f3dcab, 0 0 10px #e9d87e, 0 0 20px #e9d87e,
+    0 0 40px #f2d67e, 0 0 60px#e9c46d;
+  filter: blur(0.5px);
+}
+.christmas__gift {
+  font-size: 30px;
+  color: #fbe8f7;
+  text-shadow: 0 0 5px #f7d2ef, 0 0 10px #f3bce7, 0 0 20px #f0a5e0,
+    0 0 40px #ec8fd8, 0 0 60px#ec8fd8;
+  filter: blur(0.5px);
+  transform: rotate(10deg);
+}
+.christmas__socks-2 {
+  font-size: 30px;
+  color: #34a65f;
+  text-shadow: 0 0 5px #34a65f, 0 0 10px #0f8a5f, 0 0 20px #0f8a5f,
+    0 0 40px #235e6f, 0 0 60px#235E6F;
+  filter: blur(0.5px);
+  transform: rotate(-30deg) scaleX(-1);
+}
+@keyframes rotateGifts {
+  0% {
+    transform: rotateZ(0);
+  }
+  25% {
+    transform: rotateZ(15deg);
+  }
+  50% {
+    transform: rotateZ(0);
+  }
+  75% {
+    transform: rotateZ(-15deg);
+  }
+  100% {
+    transform: rotateZ(0);
+  }
+}
+.christmas__gifts {
+  font-size: 80px;
+  color: #f7d2ef;
+  text-shadow: 0 0 5px #f7d2ef, 0 0 10px #f3bce7, 0 0 20px #f0a5e0,
+    0 0 40px #ec8fd8, 0 0 60px#ec8fd8;
+  animation: rotateGifts 3s ease-in-out infinite;
+}
+@keyframes scaleGift {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.christmas__gift-2 {
+  font-size: 60px;
+  color: #c6e8ff;
+  text-shadow: 0 0 5px #c6e8ff, 0 0 10px #bee5ff, 0 0 20px #bee5ff,
+    0 0 40px #b8e3ff, 0 0 60px#b8e3ff;
+  transform-origin: bottom;
+  animation: scaleGift 3s ease-in-out infinite;
+}
+
+.light--yellow {
+  width: 19px;
+  height: 19px;
+  border-radius: 50%;
+  background-color: white;
+  filter: drop-shadow(0 0 5px #fffee0) drop-shadow(0 0 10px #fffec8)
+    drop-shadow(0 0 20px #fffdaf) drop-shadow(0 0 40px #fffdaf)
+    drop-shadow(0 0 60px#fdfa72) blur(2px);
+}
+.light--red {
+  width: 21px;
+  height: 21px;
+  border-radius: 50%;
+  top: 50px;
+  background-color: #ffffff;
+  filter: drop-shadow(0 0 5px #ff8b8e) drop-shadow(0 0 10px #ff3d41)
+    drop-shadow(0 0 20px #ff0000) drop-shadow(0 0 40px #dc0005)
+    drop-shadow(0 0 60px#c80004) blur(2px);
+}
+.light--winterchill {
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  top: 50px;
+  background-color: #e8eefb;
+  filter: drop-shadow(0 0 5px #d2ddf7) drop-shadow(0 0 10px #bcccf3)
+    drop-shadow(0 0 20px #a5bbf0) drop-shadow(0 0 40px #a5bbf0)
+    drop-shadow(0 0 60px#8faaec) blur(2px);
+}
+.light--SpringPink {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  top: 50px;
+  color: #fbe8f7;
+  background-color: #fbe8f7;
+  filter: drop-shadow(0 0 5px #f7d2ef) drop-shadow(0 0 10px #f3bce7)
+    drop-shadow(0 0 20px #f0a5e0) drop-shadow(0 0 40px #f0a5e0)
+    drop-shadow(0 0 60px#ec8fd8) blur(2px);
+}
+
+.christmas__mood > *:not(.christmas__tree) {
+  position: absolute;
+}
+.position-star {
+  top: 65px;
+}
+.position-socks {
+  top: 180px;
+  left: 44%;
+}
+.position-1 {
+  top: 140px;
+  left: 44%;
+}
+.position-2 {
+  top: 165px;
+  right: 42%;
+}
+.position-3 {
+  top: 195px;
+  right: 39%;
+}
+.position-4 {
+  top: 225px;
+  left: 43%;
+}
+.position-5 {
+  top: 195px;
+  left: 35%;
+}
+.position-6 {
+  top: 235px;
+  right: 42%;
+}
+.position-7 {
+  top: 260px;
+  left: 37%;
+}
+.position-8 {
+  top: 270px;
+  right: 34%;
+}
+.position-9 {
+  top: 285px;
+  left: 48%;
+}
+.position-10 {
+  top: 315px;
+  right: 39%;
+}
+.position-11 {
+  top: 335px;
+  left: 37%;
+}
+.position-12 {
+  top: 350px;
+  left: 44%;
+}
+.position-13 {
+  top: 360px;
+  right: 39%;
+}
+.position-14 {
+  top: 380px;
+  left: 31%;
+}
+.position-15 {
+  top: 390px;
+  right: 30%;
+}
+.position-16 {
+  top: 420px;
+  right: 22%;
+}
+.position-17 {
+  top: 445px;
+  left: 24%;
+}

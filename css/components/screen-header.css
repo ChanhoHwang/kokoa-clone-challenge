@@ -7,9 +7,18 @@
 .screen-header__title {
   font-size: 30px;
   font-weight: bold;
-  color: var(--christmas-dark-green);
 }
 .screen-header__icons span {
   margin-left: 25px;
-  color: var(--christmas-dark-green);
+}
+@keyframes rotateCog {
+  from {
+    transform: none;
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+.screen-header__icons .fa-cog:hover {
+  animation: rotateCog 1s linear infinite;
 }
