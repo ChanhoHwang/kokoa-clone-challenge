@@ -1,267 +1,258 @@
 .christmas {
-  margin-top: 40px;
-  border-top: var(--main-border);
-  padding-top: 30px;
-}
-.christmas--title {
-  color: var(--christmas-dark-green);
-}
-.christmas__mood {
-  width: 100%;
-  padding-top: 100px;
-  padding-bottom: 20px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   position: relative;
 }
 
-.z-index--1 {
-  z-index: 1;
+.quote {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  top: -20px;
 }
-.z-index--2 {
-  z-index: 2;
+.quote h1 {
+  font-size: 50px;
+  font-weight: bold;
+  transform: rotate(-10deg);
 }
-.z-index--3 {
-  z-index: 3;
+.quote h1:first-child {
+  margin-bottom: 20px;
+}
+.quote h1:last-child {
+  text-align: normal;
 }
 
-.christmas__tree {
-  font-size: 400px;
-  color: var(--christmas-dark-green);
-  text-shadow: 0 0 50px var(--christmas-green);
-  filter: blur(1px);
+.santa {
+  position: relative;
+  text-align: center;
 }
-.christmas__star {
-  font-size: 50px;
-  color: white;
-  text-shadow: 0 0 5px #ffffff, 0 0 10px #fffee0, 0 0 20px #fffec8,
-    0 0 40px #fffdaf, 0 0 60px#fffd8d, 0 0 100px #fdfa72;
-}
-.christmas__socks {
-  font-size: 30px;
-  color: #ff3d41;
-  text-shadow: 0 0 5px #ff3d41, 0 0 10px #ff0000, 0 0 20px #dc0005,
-    0 0 40px #dc0005, 0 0 60px#c80004;
-  filter: blur(0.5px);
+.santa__star-1 {
+  font-size: 60px;
+  color: var(--christmas-yellow);
+  position: absolute;
+  top: 60px;
+  left: -60px;
+  text-shadow: 0 0 5px var(--christmas-yellow), 0 0 10px var(--christmas-yellow);
   transform: rotate(20deg);
 }
-.christmas__star-2 {
-  font-size: 25px;
-  color: #d2eff7;
-  text-shadow: 0 0 5px #d2eff7, 0 0 10px #a5e0f0, 0 0 20px #79d0e8,
-    0 0 40px #4cc1e1, 0 0 60px#1ca0c4;
-  filter: blur(0.5px);
-  transform: rotate(25deg);
-}
-.christmas__snow {
-  font-size: 25px;
-  color: #d4efff;
-  text-shadow: 0 0 5px #d4efff, 0 0 10px #cdebff, 0 0 20px #c6e8ff,
-    0 0 40px #bee5ff, 0 0 60px#b8e3ff;
-  filter: blur(0.5px);
-  transform: rotate(25deg);
-}
-.christmas__berry {
-  font-size: 30px;
-  color: #f3dcab;
-  text-shadow: 0 0 5px #f3dcab, 0 0 10px #e9d87e, 0 0 20px #e9d87e,
-    0 0 40px #f2d67e, 0 0 60px#e9c46d;
-  filter: blur(0.5px);
-  transform: rotate(-15deg);
-}
-.christmas__snowman {
-  font-size: 30px;
-  color: #c6e8ff;
-  text-shadow: 0 0 5px #c6e8ff, 0 0 10px #bee5ff, 0 0 20px #bee5ff,
-    0 0 40px #b8e3ff, 0 0 60px#b8e3ff;
-  filter: blur(0.5px);
-  transform: rotate(30deg);
-}
-.christmas__star-3 {
-  font-size: 20px;
-  color: #f3dcab;
-  text-shadow: 0 0 5px #f3dcab, 0 0 10px #e9d87e, 0 0 20px #e9d87e,
-    0 0 40px #f2d67e, 0 0 60px#e9c46d;
-  filter: blur(0.5px);
-}
-.christmas__gift {
-  font-size: 30px;
-  color: #fbe8f7;
-  text-shadow: 0 0 5px #f7d2ef, 0 0 10px #f3bce7, 0 0 20px #f0a5e0,
-    0 0 40px #ec8fd8, 0 0 60px#ec8fd8;
-  filter: blur(0.5px);
-  transform: rotate(10deg);
-}
-.christmas__socks-2 {
-  font-size: 30px;
-  color: #34a65f;
-  text-shadow: 0 0 5px #34a65f, 0 0 10px #0f8a5f, 0 0 20px #0f8a5f,
-    0 0 40px #235e6f, 0 0 60px#235E6F;
-  filter: blur(0.5px);
-  transform: rotate(-30deg) scaleX(-1);
-}
-@keyframes rotateGifts {
-  0% {
-    transform: rotateZ(0);
-  }
-  25% {
-    transform: rotateZ(15deg);
-  }
-  50% {
-    transform: rotateZ(0);
-  }
-  75% {
-    transform: rotateZ(-15deg);
-  }
-  100% {
-    transform: rotateZ(0);
-  }
-}
-.christmas__gifts {
-  font-size: 80px;
-  color: #f7d2ef;
-  text-shadow: 0 0 5px #f7d2ef, 0 0 10px #f3bce7, 0 0 20px #f0a5e0,
-    0 0 40px #ec8fd8, 0 0 60px#ec8fd8;
-  animation: rotateGifts 3s ease-in-out infinite;
-}
-@keyframes scaleGift {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.5);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-.christmas__gift-2 {
-  font-size: 60px;
-  color: #c6e8ff;
-  text-shadow: 0 0 5px #c6e8ff, 0 0 10px #bee5ff, 0 0 20px #bee5ff,
-    0 0 40px #b8e3ff, 0 0 60px#b8e3ff;
-  transform-origin: bottom;
-  animation: scaleGift 3s ease-in-out infinite;
-}
-
-.light--yellow {
-  width: 19px;
-  height: 19px;
-  border-radius: 50%;
-  background-color: white;
-  filter: drop-shadow(0 0 5px #fffee0) drop-shadow(0 0 10px #fffec8)
-    drop-shadow(0 0 20px #fffdaf) drop-shadow(0 0 40px #fffdaf)
-    drop-shadow(0 0 60px#fdfa72) blur(2px);
-}
-.light--red {
-  width: 21px;
-  height: 21px;
-  border-radius: 50%;
-  top: 50px;
-  background-color: #ffffff;
-  filter: drop-shadow(0 0 5px #ff8b8e) drop-shadow(0 0 10px #ff3d41)
-    drop-shadow(0 0 20px #ff0000) drop-shadow(0 0 40px #dc0005)
-    drop-shadow(0 0 60px#c80004) blur(2px);
-}
-.light--winterchill {
-  width: 17px;
-  height: 17px;
-  border-radius: 50%;
-  top: 50px;
-  background-color: #e8eefb;
-  filter: drop-shadow(0 0 5px #d2ddf7) drop-shadow(0 0 10px #bcccf3)
-    drop-shadow(0 0 20px #a5bbf0) drop-shadow(0 0 40px #a5bbf0)
-    drop-shadow(0 0 60px#8faaec) blur(2px);
-}
-.light--SpringPink {
-  width: 18px;
-  height: 18px;
-  border-radius: 50%;
-  top: 50px;
-  color: #fbe8f7;
-  background-color: #fbe8f7;
-  filter: drop-shadow(0 0 5px #f7d2ef) drop-shadow(0 0 10px #f3bce7)
-    drop-shadow(0 0 20px #f0a5e0) drop-shadow(0 0 40px #f0a5e0)
-    drop-shadow(0 0 60px#ec8fd8) blur(2px);
-}
-
-.christmas__mood > *:not(.christmas__tree) {
+.santa__star-2 {
+  font-size: 40px;
+  color: var(--christmas-yellow);
   position: absolute;
+  top: -120px;
+  right: -50px;
+  text-shadow: 0 0 5px var(--christmas-yellow), 0 0 10px var(--christmas-yellow);
+  transform: rotate(-20deg);
 }
-.position-star {
-  top: 65px;
+.santa__moon {
+  font-size: 400px;
+  color: var(--christmas-yellow);
+  margin-left: 25%;
+  position: relative;
+  top: -60px;
+  text-shadow: 0 0 5px var(--christmas-yellow), 0 0 10px var(--christmas-yellow),
+    0 0 20px var(--christmas-yellow);
 }
-.position-socks {
-  top: 180px;
-  left: 44%;
+@keyframes moveSanta {
+  from {
+    transform: translateX(-180px);
+  }
+  to {
+    transform: translateX(10px);
+  }
 }
-.position-1 {
-  top: 140px;
-  left: 44%;
+.santa img {
+  width: 300px;
+  position: absolute;
+  top: 90px;
+  right: -13%;
+  animation: moveSanta 10s ease-in-out forwards;
 }
-.position-2 {
-  top: 165px;
-  right: 42%;
+@keyframes fallGift {
+  0% {
+    transform: translateX(-180px);
+  }
+  50% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateY(390px);
+  }
 }
-.position-3 {
-  top: 195px;
-  right: 39%;
+.santa__gift {
+  font-size: 20px;
+  color: var(--christmas-pink);
+  position: absolute;
+  top: 150px;
+  right: 44%;
+  animation: fallGift 20s ease-in-out forwards;
 }
-.position-4 {
-  top: 225px;
-  left: 43%;
+
+.trees {
+  width: 90%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  position: relative;
 }
-.position-5 {
-  top: 195px;
-  left: 35%;
+.trees__wrap {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.position-6 {
-  top: 235px;
-  right: 42%;
+.trees__wrap_right {
+  position: relative;
 }
-.position-7 {
-  top: 260px;
-  left: 37%;
+.trees__tree {
+  font-size: 20px;
+  color: var(--christmas-green);
 }
-.position-8 {
-  top: 270px;
-  right: 34%;
+.trees__tree-big {
+  font-size: 200px;
+  color: var(--christmas-light-green);
 }
-.position-9 {
-  top: 285px;
-  left: 48%;
+.trees__star {
+  font-size: 20px;
+  color: var(--christmas-yellow);
+  text-shadow: 0 0 5px var(--christmas-yellow), 0 0 10px var(--christmas-yellow);
+  position: absolute;
+  top: -15px;
 }
-.position-10 {
-  top: 315px;
-  right: 39%;
+.trees__ball--white {
+  font-size: 10px;
+  color: white;
+  text-shadow: 0 0 5px white, 0 0 10px white;
+  position: absolute;
+  top: 25px;
+  left: 60px;
 }
-.position-11 {
-  top: 335px;
-  left: 37%;
+.trees__ball--pink {
+  font-size: 10px;
+  color: var(--christmas-pink);
+  text-shadow: 0 0 5px var(--christmas-pink), 0 0 10px var(--christmas-pink);
+  position: absolute;
+  top: 50px;
+  right: 55px;
 }
-.position-12 {
-  top: 350px;
-  left: 44%;
+.trees__sock {
+  font-size: 25px;
+  color: var(--christmas-red);
+  position: absolute;
+  top: 70px;
+  left: 45px;
+  transform: rotate(20deg);
 }
-.position-13 {
-  top: 360px;
-  right: 39%;
+.trees__ball--yellow {
+  font-size: 10px;
+  color: var(--christmas-yellow);
+  text-shadow: 0 0 5px var(--christmas-yellow), 0 0 10px var(--christmas-yellow);
+  position: absolute;
+  top: 80px;
+  right: 45px;
 }
-.position-14 {
-  top: 380px;
-  left: 31%;
+.trees__candycane {
+  font-size: 25px;
+  color: var(--christmas-light-blue);
+  position: absolute;
+  top: 100px;
+  right: 35px;
+  transform: rotate(90deg);
 }
-.position-15 {
-  top: 390px;
-  right: 30%;
+.trees__ball--white-2 {
+  font-size: 10px;
+  color: white;
+  text-shadow: 0 0 5px white, 0 0 10px white;
+  position: absolute;
+  top: 120px;
+  left: 45px;
 }
-.position-16 {
-  top: 420px;
-  right: 22%;
+.trees__bell {
+  font-size: 25px;
+  color: var(--christmas-yellow);
+  position: absolute;
+  top: 125px;
+  right: 50px;
+  transform: rotate(-10deg);
 }
-.position-17 {
-  top: 445px;
-  left: 24%;
+
+@keyframes jumpChild {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: none;
+  }
+}
+.trees__child {
+  font-size: 25px;
+  color: var(--christmas-light-blue);
+  transform-origin: bottom;
+  animation: jumpChild 1s ease-in-out infinite;
+}
+.trees__home {
+  font-size: 30px;
+  color: var(--christmas-blue);
+}
+.trees__snowman {
+  font-size: 20px;
+  color: var(--christmas-light-blue);
+}
+.trees__snow-1 {
+  font-size: 10px;
+  color: white;
+  position: absolute;
+  top: 70px;
+  left: 200px;
+}
+.trees__snow-2 {
+  font-size: 15px;
+  color: white;
+  position: absolute;
+  top: 50px;
+  right: 170px;
+}
+.trees__snow-3 {
+  font-size: 12px;
+  color: white;
+  position: absolute;
+  top: 100px;
+  right: 70px;
+}
+
+@keyframes twinkle-1 {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.twinkle-1 {
+  animation: twinkle-1 3s ease-in-out infinite;
+}
+@keyframes twinkle-2 {
+  0% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.3;
+  }
+}
+.twinkle-2 {
+  opacity: 0.3;
+  animation: twinkle-2 3s ease-in-out infinite;
 }

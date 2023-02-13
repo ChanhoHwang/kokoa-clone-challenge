@@ -35,3 +35,18 @@
 .more-suggestions__icon-image i {
   font-size: 25px;
 }
+
+.gift_link {
+  margin: 30px 100px 0 100px;
+  padding: 10px;
+  display: block;
+  text-align: center;
+  border-radius: 20px;
+  border: var(--main-border);
+  background-color: white;
+}
+.gift_link span {
+  font-size: 20px;
+  color: var(--christmas-purple);
+  font-weight: bold;
+}
